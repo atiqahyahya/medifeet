@@ -1,21 +1,69 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import {
+  Button,
+  FormGroup,
+  FormControl,
+  ControlLabel,
+} from 'react-bootstrap';
 import './App.css';
 
-class App extends Component {
+class Login extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      username: '',
+      password: '',
+    };
+  }
+
+  validateForm() {
+    return this.state.username.length > 0
+      && this.state.password.length > 0;
+  }
+
+  handleChange = (event) => {
+    this.setState({
+      [event.target.id]: event.target.value
+    });
+  }
+
+  handleSubmit = (event) => {
+    event.preventDefault();
+  }
+
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome Medifeet</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+      <div className="Login">
+        <form onSubmit={this.handleSubmit}>
+          <FormGroup controlId="username" bsSize="large">
+            <ControlLabel>Email</ControlLabel>
+            <FormControl
+              autoFocus
+              type="email"
+              value={this.state.username}
+              onChange={this.handleChange} />
+          </FormGroup>
+          <FormGroup controlId="password" bsSize="large">
+            <ControlLabel>Password</ControlLabel>
+            <FormControl
+              value={this.state.password}
+              onChange={this.handleChange}
+              type="password" />
+          </FormGroup>
+          <Button
+            block
+            bsSize="large"
+            disabled={ ! this.validateForm() }
+            type="submit">
+            Login
+          </Button>
+        </form>
       </div>
     );
   }
 }
 
-export default App;
+export default Login;
+
+
