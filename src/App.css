@@ -33,3 +33,25 @@
     max-width: 320px;
   }
 }
+
+@media all and (min-width: 480px) {
+  .Staff {
+    padding: 60px 0;
+  }
+
+  .Staff form {
+    margin: 0 auto;
+    max-width: 320px;
+  }
+}
+
+@media all and (min-width: 480px) {
+  .Manager {
+    padding: 60px 0;
+  }
+
+  .Manager form {
+    margin: 0 auto;
+    max-width: 320px;
+  }
+}
