@@ -10,6 +10,7 @@ import {
 
 import './index.css';
 
+
 class Staff extends Component {
 	constructor(props) {
 	    super(props);
@@ -64,3 +65,5 @@ class Staff extends Component {
 }
 
 export default Staff;
+
+// in future there have for loop to loop and display staff list
