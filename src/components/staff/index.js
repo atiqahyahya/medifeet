@@ -36,17 +36,24 @@ class Staff extends Component {
 				        <td>Mark</td>
 				        <td>Otto</td>
 				        <td>@mdo</td>
+				        <td>asasas</td>
+				        <td>017</td>
 				      </tr>
 				      <tr>
 				        <td>2</td>
 				        <td>Jacob</td>
 				        <td>Thornton</td>
 				        <td>@fat</td>
+				        <td>asasa</td>
+				        <td>012</td>				     
 				      </tr>
 				      <tr>
 				        <td>3</td>
-				        <td colSpan="2">Larry the Bird</td>
+				        <td>say</td>
+				        <td>Larry the Bird</td>
 				        <td>@twitter</td>
+				        <td>swdg</td>
+				        <td>014</td>
 				      </tr>
 				    </tbody>
 			</Table>   	
