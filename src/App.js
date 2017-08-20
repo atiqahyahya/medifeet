@@ -21,7 +21,5 @@ class App extends Component {
   }
 
 export default App;
-export default Login;
-export default Staff;
-export default Manager;
+
 

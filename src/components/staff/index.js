@@ -10,12 +10,14 @@ import {
 } from 'react-bootstrap';
 
 import './index.css';
+import NavBar from '../global/header'
 
 class Staff extends Component {
 
   render() {
     return (
       	<div>
+      		<NavBar />
       		<Col  xs={25} md={6}>
       		
 		      	<center>
